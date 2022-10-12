@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './component/home';
+import Skill from './component/skill';
+import Project from './component/project';
+import Contact from './component/contact';
+import Footer from './component/footer';
+import './style/index.css';
+
+function App() {
+  const [alert, setAlert] = useState('')
+
+  return (
+    <div className="container">
+      {alert === 'succeed' ? <div className='alert'><h2>Successfully sent</h2></div> : 
+      alert === 'failed' ? <div className='alert'><h2>Failed to send</h2></div> : []}
+      <Home />
+      <Skill />
+      <Project />
+      <Contact alert={alert} setAlert={setAlert} />
+      <Footer />
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +29,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
