@@ -164,7 +164,8 @@ a, .icon {
 .image {
   position: relative;
   background-color: var(--four);
-  box-shadow: 3px -3px 0 var(--one);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .image::after {
