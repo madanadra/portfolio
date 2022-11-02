@@ -8,7 +8,7 @@ const Home = () => {
                 <h2 onClick={() => document.getElementById('skill').scrollIntoView(true)}>Let's dive <i class="fas fa-arrow-down icon"></i></h2>
             </div>
             <div className='profile'>
-                <img src={require('../assets/profile.png')} alt="Profile" loading='lazy' />
+                <img src={require('../assets/profile.png')} alt="Profile" />
                 <div className='bg' />
                 <div className='shadow' />
             </div>
