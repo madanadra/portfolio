@@ -1,10 +1,13 @@
 const Footer = () => {
-    return (
-      <div className="footer">
-        <h3>Thank you for visiting, Have a nice day</h3>
-        <h3><i className="far fa-copyright"></i> 2022 Muhammad Laksmana Indra</h3>
-      </div>
-    );
+  const year = new Date().getFullYear()
+  
+  return (
+    <div className="bg-four mt-20 px-5 py-7 text-center">
+      <h1 className="text-xs sm:text-sm lg:text-base">
+        Copyright <i className="far fa-copyright"></i> {year} Muhammad Laksmana Indra
+      </h1>
+    </div>
+  );
 }
 
 export default Footer;
