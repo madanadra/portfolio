@@ -2,7 +2,7 @@ const About = () => {
     return (
         <div id='about' className='grid sm:grid-cols-2 items-center max-w-7xl mx-auto pt-10 px-5'>
             <div className='bg-four px-6 pt-6 sm:px-12 sm:pt-12 rounded-lg'>
-                <img className='w-full drop-shadow-[3px_3px_0px_#ffcb74]' src={require('../assets/profile.png')} alt="Profile" />
+                <img className='w-full drop-shadow-[3px_0px_0px_#ffcb74]' src={require('../assets/profile.png')} alt="Profile" />
             </div>
             <div className='pt-9 sm:pl-12 sm:pt-0 text-center'>
                 <h2 className='font-bold text-md sm:text-lg lg:text-xl text-one tracking-widest'>
