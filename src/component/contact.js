@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { send } from 'emailjs-com';
 
-const Contact = ({alert, setAlert}) => {
+const Contact = ({setAlert}) => {
     const [load, setLoad] = useState(false)
 
     const sendEmail = (e) => {
@@ -21,13 +21,6 @@ const Contact = ({alert, setAlert}) => {
         });
     }
 
-    useEffect(() => {
-        setTimeout(()=>{
-            setAlert('')
-            return () => {setAlert('')};
-        }, 3000)
-    }, [alert]); // eslint-disable-line react-hooks/exhaustive-deps
-
     const Social = ({children, url}) => {
       return (
         <a className='bg-four pt-1 pb-0.5 px-2.5 rounded' 
@@ -38,7 +31,7 @@ const Contact = ({alert, setAlert}) => {
     }
 
     return (
-      <div id='contact' className="grid sm:grid-cols-2 items-center mt-10 max-w-7xl mx-auto pt-10 px-5">
+      <div id='contact' className="grid sm:grid-cols-2 items-center mt-10 pt-10">
         <div className='pb-9 sm:pr-12 sm:pb-0 text-center'>
             <h2 className='font-bold text-md sm:text-lg lg:text-xl text-one tracking-widest'>MY CONTACT</h2>
             <h1 className='font-main text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 mb-4'>Get In Touch</h1>

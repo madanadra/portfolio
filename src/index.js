@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from './component/navbar';
 import Home from './component/home';
@@ -21,22 +21,23 @@ function App() {
     });   
   }
 
+  useEffect(() => {
+    setTimeout(()=>{
+        setAlert('')
+        return () => {setAlert('')};
+    }, 3000)
+  }, [alert]); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
-    <div className='bg-two text-three font-second'>
-      {alert === 'succeed' ? 
-        <div className='top-5 z-20 right-5 bg-four rounded-md py-3 px-5 w-max fixed text-xs sm:text-sm lg:text-base'>
-          <h3>Successfully sent</h3>
-        </div> 
-      : alert === 'failed' ? 
-        <div className='top-5 z-20 right-5 bg-four rounded-md py-3 px-5 w-max fixed text-xs sm:text-sm lg:text-base'>
-          <h3>Failed to send</h3>
-        </div> 
-      : []}
-      <Navbar scroll={scroll} />
-      <Home scroll={scroll} />
-      <About />
-      <Work />
-      <Contact alert={alert} setAlert={setAlert} />
+    <div className='bg-two text-three font-second relative'>
+      <img className='absolute w-full h-screen' src={require('./assets/home.svg').default} alt="Bg home" />
+      <Navbar alert={alert} scroll={scroll} />
+      <div className='max-w-6xl mx-auto px-5'>
+        <Home scroll={scroll} />
+        <About />
+        <Work />
+        <Contact setAlert={setAlert} />
+      </div>
       <Footer />
     </div>
   );
