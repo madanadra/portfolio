@@ -19,13 +19,13 @@ const Work = () => {
                     <div key={i}
                     className='rounded-lg aspect-video overflow-hidden relative'>
                         <img src={require(`../assets/${d.src}.jpg`)} alt={d.title} loading='lazy'
-                        className='h-full w-full saturate-200' />
-                        <div className="work absolute inset-0 grid content-center z-10 p-5">
+                        className='h-full w-full saturate-200 brightness-50' />
+                        <div className="absolute inset-0 grid content-center z-10 p-5">
                             <h1 className='font-main text-xl sm:text-2xl lg:text-3xl mb-3'>
                                 {d.title}
                             </h1>
                             <a href={`https://github.com/madanadra/${d.url}`} target="_blank" rel="noopener noreferrer"
-                            className='text-two tracking-widest rounded bg-four py-2 px-3.5 w-max mx-auto text-xs sm:text-sm lg:text-base'>
+                            className='tracking-widest rounded bg-four py-2 px-3.5 w-max mx-auto text-xs sm:text-sm lg:text-base'>
                                 SOURCE CODE
                             </a>
                         </div>

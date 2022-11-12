@@ -1,10 +1,10 @@
 const Home = ({scroll}) => {
     return (
-        <div id="home" className="home min-h-screen grid content-center text-center max-w-5xl mx-auto relative">
+        <div id="home" className="min-h-screen grid content-center text-center max-w-5xl mx-auto relative z-30">
             <h1 className='font-main font-bold text-5xl sm:text-6xl lg:text-7xl'>
                 I'm Indra a Frontend developer with React JS.
             </h1>
-            <h2 className='text-three text-sm sm:text-base lg:text-lg mt-5'>
+            <h2 className='text-sm sm:text-base lg:text-lg mt-5'>
                 Build fast and stable websites with creativity and passion.
             </h2>
             <div onClick={() => scroll('about')}

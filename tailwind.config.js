@@ -10,7 +10,7 @@ module.exports = {
       'one': '#000000',
       "two": "#111111",
       'three': '#707070',
-      'four': "#ffcb74",
+      'four': "#e60b17",
       'five': "#eeeeee"
     },
     fontFamily: {

@@ -7,8 +7,8 @@ const Navbar = ({alert, scroll}) => {
     }
 
     return (
-        <div className='min-w-full fixed top-0 z-[15]'>
-            <ul className="flex gap-1 sm:gap-2 lg:gap-3 justify-center px-2 navbar ">
+        <div className='min-w-full fixed top-0 z-40'>
+            <ul className="flex gap-1 sm:gap-2 lg:gap-3 justify-center px-2 navbar">
                 <Menu name='home' />
                 <Menu name='about' />
                 <Menu name='work' />

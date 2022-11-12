@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className='bg-two text-five font-second relative'>
+      <div className='absolute w-full h-screen z-20 shadow-[0px_0px_90px_25px_#111111_inset] md:shadow-[0px_0px_90px_50px_#111111_inset]' />
       <img className='absolute w-full h-screen' src={require('./assets/home.svg').default} alt="Bg home" />
       <Navbar alert={alert} scroll={scroll} />
       <div className='max-w-6xl mx-auto px-5'>

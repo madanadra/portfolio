@@ -35,7 +35,7 @@ const Contact = ({setAlert}) => {
         <div className='pb-9 sm:pr-12 sm:pb-0 text-center'>
             <h2 className='font-bold text-md sm:text-lg lg:text-xl text-four tracking-widest'>MY CONTACT</h2>
             <h1 className='font-main text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 mb-4'>Get In Touch</h1>
-            <div className='flex gap-x-2 sm:gap-x-3 justify-center text-lg sm:text-xl lg:text-2xl text-two'>
+            <div className='flex gap-x-2 sm:gap-x-3 justify-center text-lg sm:text-xl lg:text-2xl'>
               <Social url="https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b">
                 <i className="fab fa-linkedin-in" />
               </Social>
@@ -59,10 +59,10 @@ const Contact = ({setAlert}) => {
           className='py-2 bg-transparent outline-0 border-b border-three resize-none focus:border-four placeholder:text-three' />
           {load ? 
           <button type='submit' disabled
-          className='rounded-md bg-four text-two tracking-widest p-2 sm:p-3 mt-3 brightness-50'>SENDING...</button>
+          className='rounded-md bg-four tracking-widest p-2 sm:p-3 mt-3 brightness-50'>SENDING...</button>
           : 
           <button type='submit' 
-          className='rounded-md bg-four text-two tracking-widest p-2 sm:p-3 mt-3'>SEND</button>}
+          className='rounded-md bg-four tracking-widest p-2 sm:p-3 mt-3'>SEND</button>}
           <h3 className='text-three text-center text-xs sm:text-sm lg:text-base'>galunggungone@gmail.com</h3>
         </form>
       </div>
