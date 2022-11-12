@@ -13,3 +13,8 @@
     background: #e60b17;
     background: linear-gradient(180deg, #111111 50%, #e60b17 100%);
 }
+
+.work {
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,0) 0%, rgba(17,17,17,0.5) 35%, rgba(17,17,17,1) 70%);
+}

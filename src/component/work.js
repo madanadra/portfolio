@@ -17,18 +17,18 @@ const Work = () => {
             <div className='grid sm:grid-cols-2 mt-8 gap-3 sm:gap-4 lg:gap-5'>
                 {data.map((d, i) => 
                     <div key={i}
-                    className='rounded-lg aspect-video overflow-hidden relative'>
+                    className='aspect-video relative'>
                         <img src={require(`../assets/${d.src}.jpg`)} alt={d.title} loading='lazy'
-                        className='h-full w-full saturate-200 brightness-50' />
-                        <div className="absolute inset-0 grid content-center z-10 p-5">
-                            <h1 className='font-main text-xl sm:text-2xl lg:text-3xl mb-3'>
+                        className='h-full w-full rounded-lg brightness-75' />
+                        <div className="absolute left-0 right-0 bottom-0 z-10 pt-5 px-5 work">
+                            <h1 className='font-main text-xl sm:text-2xl lg:text-3xl'>
                                 {d.title}
                             </h1>
-                            <a href={`https://github.com/madanadra/${d.url}`} target="_blank" rel="noopener noreferrer"
-                            className='tracking-widest rounded bg-four py-2 px-3.5 w-max mx-auto text-xs sm:text-sm lg:text-base'>
-                                SOURCE CODE
-                            </a>
                         </div>
+                        <a href={`https://github.com/madanadra/${d.url}`} target="_blank" rel="noopener noreferrer"
+                        className='tracking-widest rounded bg-four py-2 px-3.5 text-xs sm:text-sm lg:text-base absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4'>
+                            SOURCE CODE
+                        </a>
                     </div>
                 )}
             </div>
