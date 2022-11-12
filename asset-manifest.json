@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45081040.css",
-    "main.js": "/portfolio/static/js/main.4a3c19f3.js",
+    "main.css": "/portfolio/static/css/main.9b21ab1d.css",
+    "main.js": "/portfolio/static/js/main.bcf98c6c.js",
     "static/media/movie.jpg": "/portfolio/static/media/movie.05f234faad59e1a3bfc4.jpg",
     "static/media/game.jpg": "/portfolio/static/media/game.6dbee25d3680dbd1d50a.jpg",
     "static/media/profile.png": "/portfolio/static/media/profile.dad304160392317b9a0b.png",
     "static/media/typing.jpg": "/portfolio/static/media/typing.9052b2abd70edbfb8d94.jpg",
     "static/media/medsos.jpg": "/portfolio/static/media/medsos.de62e915e51d298b9db0.jpg",
     "static/media/netflix.jpg": "/portfolio/static/media/netflix.04729fde26b986955ae6.jpg",
-    "static/media/home.svg": "/portfolio/static/media/home.09c9bb1e82c58c49b73c00069504f14e.svg",
+    "static/media/home.svg": "/portfolio/static/media/home.c3782adc06a6362a34fb8e8dfabeed8c.svg",
     "static/media/react.svg": "/portfolio/static/media/react.03a1570195b068996277f88b9ab1941c.svg",
     "static/media/next.svg": "/portfolio/static/media/next.5f7bc847ae8fa4902588cc7286412862.svg",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.71140c4898e7015c91cb19cb91d4672e.svg",
     "index.html": "/portfolio/index.html",
-    "main.45081040.css.map": "/portfolio/static/css/main.45081040.css.map",
-    "main.4a3c19f3.js.map": "/portfolio/static/js/main.4a3c19f3.js.map"
+    "main.9b21ab1d.css.map": "/portfolio/static/css/main.9b21ab1d.css.map",
+    "main.bcf98c6c.js.map": "/portfolio/static/js/main.bcf98c6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.45081040.css",
-    "static/js/main.4a3c19f3.js"
+    "static/css/main.9b21ab1d.css",
+    "static/js/main.bcf98c6c.js"
   ]
 }
