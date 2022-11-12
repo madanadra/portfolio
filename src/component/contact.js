@@ -33,9 +33,9 @@ const Contact = ({setAlert}) => {
     return (
       <div id='contact' className="grid sm:grid-cols-2 items-center mt-10 pt-10">
         <div className='pb-9 sm:pr-12 sm:pb-0 text-center'>
-            <h2 className='font-bold text-md sm:text-lg lg:text-xl text-one tracking-widest'>MY CONTACT</h2>
+            <h2 className='font-bold text-md sm:text-lg lg:text-xl text-four tracking-widest'>MY CONTACT</h2>
             <h1 className='font-main text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 mb-4'>Get In Touch</h1>
-            <div className='flex gap-x-2 sm:gap-x-3 justify-center text-lg sm:text-xl lg:text-2xl text-one'>
+            <div className='flex gap-x-2 sm:gap-x-3 justify-center text-lg sm:text-xl lg:text-2xl text-two'>
               <Social url="https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b">
                 <i className="fab fa-linkedin-in" />
               </Social>
@@ -52,18 +52,18 @@ const Contact = ({setAlert}) => {
         </div>
         <form className='grid gap-y-5 text-sm sm:text-base lg:text-lg' onSubmit={(e) => sendEmail(e)}>
           <input type='text' placeholder='Name' name='name' required
-          className='py-2 bg-transparent outline-0 border-b border-four focus:border-one placeholder:text-five' />
+          className='py-2 bg-transparent outline-0 border-b border-three focus:border-four placeholder:text-three' />
           <input type='email' placeholder='Email' name='email' required
-          className='py-2 bg-transparent outline-0 border-b border-four focus:border-one placeholder:text-five' />
+          className='py-2 bg-transparent outline-0 border-b border-three focus:border-four placeholder:text-three' />
           <textarea placeholder='Message' rows='5' name='message' required
-          className='py-2 bg-transparent outline-0 border-b border-four resize-none focus:border-one placeholder:text-five' />
+          className='py-2 bg-transparent outline-0 border-b border-three resize-none focus:border-four placeholder:text-three' />
           {load ? 
           <button type='submit' disabled
-          className='rounded-md bg-four tracking-widest p-2 sm:p-3 mt-3 brightness-50'>SENDING...</button>
+          className='rounded-md bg-four text-two tracking-widest p-2 sm:p-3 mt-3 brightness-50'>SENDING...</button>
           : 
           <button type='submit' 
-          className='rounded-md bg-four text-one tracking-widest p-2 sm:p-3 mt-3'>SEND</button>}
-          <h3 className='text-five text-center text-xs sm:text-sm lg:text-base'>galunggungone@gmail.com</h3>
+          className='rounded-md bg-four text-two tracking-widest p-2 sm:p-3 mt-3'>SEND</button>}
+          <h3 className='text-three text-center text-xs sm:text-sm lg:text-base'>galunggungone@gmail.com</h3>
         </form>
       </div>
     );

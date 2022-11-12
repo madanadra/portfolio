@@ -1,17 +1,17 @@
 const About = () => {
     return (
         <div id='about' className='grid sm:grid-cols-2 items-center pt-10'>
-            <div className='bg-four px-6 pt-6 sm:px-12 sm:pt-12 rounded-lg'>
-                <img className='w-full drop-shadow-[3px_0px_0px_#ffcb74]' src={require('../assets/profile.png')} alt="Profile" />
+            <div className='about px-6 pt-6 sm:px-12 sm:pt-12 rounded-lg'>
+                <img className='w-full drop-shadow-[3px_0px_0px_#eeeeee]' src={require('../assets/profile.png')} alt="Profile" />
             </div>
             <div className='pt-9 sm:pl-12 sm:pt-0 text-center'>
-                <h2 className='font-bold text-md sm:text-lg lg:text-xl text-one tracking-widest'>
+                <h2 className='font-bold text-md sm:text-lg lg:text-xl text-four tracking-widest'>
                     ABOUT ME
                 </h2>
                 <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold font-main mt-5 mb-4'>
                     Muhammad Laksmana Indra
                 </h1>
-                <h3 className='text-five text-xs sm:text-sm lg:text-base'>
+                <h3 className='text-three text-xs sm:text-sm lg:text-base'>
                     Frontend developer with React JS, Next JS, Tailwind CSS, and several other technologies,
                     including Backend technologies like Laravel and MySQL.
                     I translate the design into a fast and stable website.

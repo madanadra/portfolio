@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar {
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,1) 50%, rgba(17,17,17,0.5) 75%, rgba(17,17,17,0) 100%);
+}
+
+.home, .work {
+    background: rgb(17,17,17);
+    background: radial-gradient(circle, rgba(17,17,17,0.75) 25%, rgba(17,17,17,0.5) 50%, rgba(17,17,17,0.25) 75%, rgba(17,17,17,0) 100%);
+}
+
+.about {
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,1) 50%, rgba(255,203,116,1) 100%);
+}

@@ -29,7 +29,7 @@ function App() {
   }, [alert]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className='bg-two text-three font-second relative'>
+    <div className='bg-two text-five font-second relative'>
       <img className='absolute w-full h-screen' src={require('./assets/home.svg').default} alt="Bg home" />
       <Navbar alert={alert} scroll={scroll} />
       <div className='max-w-6xl mx-auto px-5'>

@@ -8,18 +8,18 @@ const Navbar = ({alert, scroll}) => {
 
     return (
         <div className='min-w-full fixed top-0 z-[15]'>
-            <ul className="flex gap-1 sm:gap-2 lg:gap-3 justify-center px-2 bg-two shadow-[0px_3px_7px_#000000] ">
+            <ul className="flex gap-1 sm:gap-2 lg:gap-3 justify-center px-2 navbar ">
                 <Menu name='home' />
                 <Menu name='about' />
                 <Menu name='work' />
                 <Menu name='contact' />
             </ul>
             {alert === 'succeed' ? 
-                <div className='mt-5 mr-5 ml-auto w-max shadow-[0px_0px_10px_#000000] bg-two rounded-md py-3 px-5 text-xs sm:text-sm lg:text-base'>
+                <div className='mt-5 mr-5 ml-auto w-max navbar rounded-md py-3 px-5 text-xs sm:text-sm lg:text-base'>
                 <h3>Successfully sent</h3>
                 </div> 
             : alert === 'failed' ? 
-                <div className='mt-5 mr-5 ml-auto w-max shadow-[0px_0px_10px_#000000] bg-two rounded-md py-3 px-5 text-xs sm:text-sm lg:text-base'>
+                <div className='mt-5 mr-5 ml-auto w-max navbar rounded-md py-3 px-5 text-xs sm:text-sm lg:text-base'>
                 <h3>Failed to send</h3>
                 </div> 
             : []}
