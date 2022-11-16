@@ -7,15 +7,12 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'one': '#000000',
-      "two": "#111111",
-      'three': '#707070',
-      'four': "#e60b17",
-      'five': "#eeeeee"
+      'one': '#fdfefe',
+      "two": "#7b7d7d",
+      'three': "#17202a",
     },
     fontFamily: {
-      'main': 'Josefin Sans, sans-serif',
-      'second': 'Poppins, sans-serif',
+      'main': 'Noto Sans, sans-serif',
     },
     extend: {},
   },
