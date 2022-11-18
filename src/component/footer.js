@@ -6,7 +6,11 @@ const Footer = () => {
       <div className='max-w-7xl mx-auto text-xs sm:text-sm font-normal py-3 px-5 text-two flex justify-between'>
         <h1><i className="far fa-copyright"></i> {year} Muhammad Laksmana Indra</h1>
         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=indrafrontend@gmail.com' target="_blank" rel="noopener noreferrer"
-        className='hover:underline w-max'>
+        className='hidden sm:block hover:underline w-max'>
+          Email
+        </a>
+        <a href='mailto:indrafrontend@gmail.com' target="_blank" rel="noopener noreferrer"
+        className='sm:hidden hover:underline w-max'>
           Email
         </a>
       </div>

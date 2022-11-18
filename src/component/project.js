@@ -33,8 +33,10 @@ const Project = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-9 gap-x-6 mt-7">
                     {data.map((d, i) => 
                         <div key={i} className='grid content-start'>
-                            <img src={require(`../assets/${d.src}.jpg`)} alt={d.title} loading='lazy'
-                            className='aspect-video rounded saturate-200' />
+                            <div className='aspect-video rounded bg-two overflow-hidden'>
+                                <img src={require(`../assets/${d.src}.jpg`)} alt={d.title} loading='lazy'
+                                className='w-full h-full saturate-200' />
+                            </div>
                             <h1 className='text-lg sm:text-xl lg:text-2xl font-semibold mt-3.5'>{d.title}</h1>
                             <h2 className="text-two text-sm sm:text-base lg:text-lg mt-1 mb-3">{d.detail}</h2>
                             <a href={`https://github.com/madanadra/${d.url}`} target="_blank" rel="noopener noreferrer"

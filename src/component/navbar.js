@@ -19,7 +19,7 @@ const Navbar = () => {
                 <ul className="flex sm:hidden gap-5 font-semibold">
                     <Part url='https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b' value={<i className="fab fa-linkedin-in" />} />
                     <Part url='https://github.com/madanadra' value={<i className="fab fa-github" />} />
-                    <Part url='https://mail.google.com/mail/?view=cm&fs=1&to=indrafrontend@gmail.com' value={<i className="fas fa-envelope"></i>} />
+                    <Part url='mailto:indrafrontend@gmail.com' value={<i className="fas fa-envelope"></i>} />
                 </ul>
             </div>
         </div>
