@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5aa6677b.css",
-    "main.js": "/portfolio/static/js/main.cdbc85ae.js",
+    "main.css": "/portfolio/static/css/main.8b354dff.css",
+    "main.js": "/portfolio/static/js/main.587f6ec2.js",
     "static/media/movie.jpg": "/portfolio/static/media/movie.05f234faad59e1a3bfc4.jpg",
     "static/media/game.jpg": "/portfolio/static/media/game.6dbee25d3680dbd1d50a.jpg",
     "static/media/typing.jpg": "/portfolio/static/media/typing.9052b2abd70edbfb8d94.jpg",
-    "static/media/medsos.jpg": "/portfolio/static/media/medsos.de62e915e51d298b9db0.jpg",
-    "static/media/netflix.jpg": "/portfolio/static/media/netflix.04729fde26b986955ae6.jpg",
     "static/media/react.svg": "/portfolio/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/next.svg": "/portfolio/static/media/next.1b2b52c044b9dcea988e68b966864c5a.svg",
     "index.html": "/portfolio/index.html",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.315d0ac2a2708d5f06972906113dfbf1.svg",
-    "main.5aa6677b.css.map": "/portfolio/static/css/main.5aa6677b.css.map",
-    "main.cdbc85ae.js.map": "/portfolio/static/js/main.cdbc85ae.js.map"
+    "main.8b354dff.css.map": "/portfolio/static/css/main.8b354dff.css.map",
+    "main.587f6ec2.js.map": "/portfolio/static/js/main.587f6ec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aa6677b.css",
-    "static/js/main.cdbc85ae.js"
+    "static/css/main.8b354dff.css",
+    "static/js/main.587f6ec2.js"
   ]
 }
