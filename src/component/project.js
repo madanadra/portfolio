@@ -21,8 +21,8 @@ const Project = () => {
     ]
 
     return (
-        <div className="bg-three text-one">
-            <div className="max-w-6xl mx-auto px-5 pt-9 pb-14 sm:pt-12 sm:pb-20">
+        <div className="bg-three text-one pb-9 sm:pb-6">
+            <div className="max-w-6xl mx-auto px-5 py-9 sm:py-12">
                 <div className='flex flex-wrap justify-between items-center font-semibold'>
                     <h1 className='text-md sm:text-lg lg:text-xl'>Featured Projects</h1>
                     <a href='https://github.com/madanadra' target="_blank" rel="noopener noreferrer" 

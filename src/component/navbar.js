@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul className="hidden sm:flex gap-5 font-semibold">
                     <Part url='https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b' value='LinkedIn' />
                     <Part url='https://github.com/madanadra' value='GitHub' />
-                    <Part url='https://mail.google.com/mail/?view=cm&fs=1&to=indrafrontend@gmail.com' value='Contact' />
+                    <Part url='https://mail.google.com/mail/?view=cm&fs=1&to=indrafrontend@gmail.com' value='Email' />
                 </ul>
                 <ul className="flex sm:hidden gap-5 font-semibold">
                     <Part url='https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b' value={<i className="fab fa-linkedin-in" />} />
