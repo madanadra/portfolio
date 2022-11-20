@@ -7,11 +7,11 @@ const Footer = () => {
         <h1 className='grow'><i className="far fa-copyright"></i> {year} Muhammad Laksmana Indra</h1>
         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=indrafrontend@gmail.com' target="_blank" rel="noopener noreferrer"
         className='hidden sm:block w-max'>
-          <i class="far fa-question-circle"></i>
+          <i className="fas fa-envelope"></i>
         </a>
         <a href='mailto:indrafrontend@gmail.com' target="_blank" rel="noopener noreferrer"
         className='sm:hidden w-max'>
-          <i class="far fa-question-circle"></i>
+          <i className="fas fa-envelope"></i>
         </a>
       </div>
     </div>

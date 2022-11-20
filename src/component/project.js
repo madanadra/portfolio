@@ -34,7 +34,7 @@ const Project = () => {
                     {data.map((d, i) => 
                         <div key={i} className='grid content-start'>
                             <div className='aspect-video rounded bg-two overflow-hidden'>
-                                <img src={require(`../assets/${d.src}.jpg`)} alt={d.title} loading='lazy'
+                                <img src={require(`../image/${d.src}.jpg`)} alt={d.title} loading='lazy'
                                 className='w-full h-full saturate-200' />
                             </div>
                             <h1 className='text-lg sm:text-xl lg:text-2xl font-semibold mt-3.5'>{d.title}</h1>
