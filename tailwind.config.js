@@ -8,8 +8,11 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'one': '#fdfefe',
-      "two": "#7b7d7d",
-      'three': "#17202a",
+      'two': '#7b7d7d',
+      'three': '#17202a',
+      'react': '#61dafb',
+      'next': '#000000',
+      'tailwind': '#06b6d4',
     },
     fontFamily: {
       'main': 'Noto Sans, sans-serif',

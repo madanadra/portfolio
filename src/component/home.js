@@ -1,4 +1,13 @@
 const Home = () => {
+    const Link = ({url, color, text}) => {
+        return (
+            <a href={url} target="_blank" rel="noopener noreferrer"
+            className={`underline decoration-${color} text-${color}`}>
+                {text}
+            </a>
+        );
+    }
+
     return (
         <div className="bg-one min-h-screen flex items-center pt-9 sm:pt-6">
             <div className="max-w-6xl mx-auto px-5 py-9 sm:py-12 grid gap-4 sm:gap-5 lg:gap-6">
@@ -12,11 +21,11 @@ const Home = () => {
                 <h1 className='text-three text-3xl sm:text-4xl lg:text-5xl w-max font-bold'>Hi, I'm Indra</h1>
                 <hr className="border-t-2 border-four line" />
                 <p className="text-two text-lg md:text-xl lg:text-2xl font-normal">
-                    My full name is Muhammad Laksmana Indra.
-                    I'm a Frontend developer with React JS, Next JS, Tailwind CSS, and several other technologies.
-                    I'm also familiar with some backend technologies like Laravel and MySQL.
-                    I translate the design into a fast and stable website.
-                    I'm interested in art and logic, that's why I chose Frontend.
+                    My full name is Muhammad Laksmana Indra. I'm a Frontend developer 
+                    with <Link url='https://reactjs.org' color='react' text='React JS' />, <Link url='https://nextjs.org' color='next' text='Next JS' />, <Link url='https://tailwindcss.com' color='tailwind' text='Tailwind CSS' />, and 
+                    several other technologies. I'm also familiar with some backend technologies like Laravel and MySQL. 
+                    I translate the design into a fast and stable website. 
+                    I'm interested in art and logic, that's why I chose Frontend. 
                     I have worked on many projects and have several certificates.
                 </p>
                 <hr className="border-t-2 border-four mr-0 ml-auto line" />
