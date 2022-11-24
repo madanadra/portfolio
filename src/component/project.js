@@ -37,10 +37,10 @@ const Project = () => {
                                 <img src={require(`../image/${d.src}.jpg`)} alt={d.title} loading='lazy'
                                 className='w-full h-full saturate-200' />
                             </div>
-                            <h1 className='text-lg sm:text-xl lg:text-2xl font-semibold mt-3.5'>{d.title}</h1>
-                            <h2 className="text-two text-sm sm:text-base lg:text-lg mt-1 mb-3">{d.detail}</h2>
+                            <h1 className='text-lg sm:text-xl lg:text-2xl font-semibold mt-4'>{d.title}</h1>
+                            <h2 className="text-two text-sm sm:text-base lg:text-lg mt-1 mb-3.5">{d.detail}</h2>
                             <a href={`https://github.com/madanadra/${d.url}`} target="_blank" rel="noopener noreferrer"
-                            className='font-bold underline text-one text-xs sm:text-sm lg:text-base uppercase w-max'>
+                            className='font-bold underline text-one text-xs sm:text-sm lg:text-base w-max'>
                                 Source code
                             </a>
                         </div>
