@@ -35,7 +35,7 @@ export default function Page() {
   return (<>
     <Navbar name='Project' />
     <Main />
-    <div  className='py-7 sm:py-14 mt-14'>
+    <div className='py-7 sm:py-14 mt-14'>
       {project.map((item, i) => 
         <Card key={i} item={item} index={i} />
       )}
