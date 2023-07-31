@@ -12,7 +12,7 @@ export default function Main() {
     return (
         <div className="grid gap-y-14 px-5 sm:px-20">
             <h1 className="font-black text-[3em] sm:w-2/3 leading-tight sm:leading-snug">
-                Hi, I'm Indra, a Frontend Developer with React JS.
+                Hi, I&apos;m Indra, a Frontend Developer with React JS.
             </h1>
             <h2 onClick={() => scroll('project0')} className="font-light text-[1.5em] cursor-pointer">
                 Scroll to explore
