@@ -34,7 +34,7 @@ export default function Page() {
   return (<>
     <Navbar name='Project' />
     <h1 className="font-black text-[3em] sm:w-2/3 leading-tight sm:leading-snug px-5 sm:px-20">
-      Hi! I&apos;m Indra, a Frontend Developer with React JS.
+      Hi! I&apos;m Indra, a Front-End Developer with React JS.
     </h1>
     <div className='py-7 sm:py-14 mt-14'>
       <h1 className='font-semibold text-[1.15em] px-5 sm:px-20 mb-10'>Featured projects</h1>
