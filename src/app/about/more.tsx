@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function More() {
     return (
         <div className="flex justify-end gap-x-5 p-5 sm:py-10 sm:px-20 mt-14 text-[1.15em]">
-            <Link href='https://madanadra.github.io/file/cv-ats.pdf' target="_blank"
+            <Link href='https://drive.google.com/file/d/1HJqH5kHuKs381-lSNEM6cE5oKv-IT22-/view?usp=drive_link' target="_blank"
             className="underline">Resume</Link>
             <Link href='https://github.com/madanadra' target="_blank"
             className="underline">GitHub</Link>
