@@ -11,7 +11,7 @@ export default function Card({item, index}: {item: {image: string, imageMobile: 
             </div>
             <div className="grid content-center gap-y-3">
                 <Link href={item.link} target="_blank" 
-                className="font-bold text-[2em] leading-none underline w-max mb-0.5">{item.name}</Link>
+                className="font-semibold text-[2em] leading-none underline w-max mb-0.5">{item.name}</Link>
                 <h1 className="text-[1.5em] font-light leading-relaxed">{item.description}</h1>
             </div>
         </div>

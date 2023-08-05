@@ -16,7 +16,7 @@ export default function Navbar({name}: {name: string}) {
 
     return (
         <div className="flex items-center justify-between gap-x-3 p-5 sm:py-10 sm:px-20 mb-14">
-            <Link href='/' className="font-bold text-[1.25em]">Indra.</Link>
+            <Link href='/' className="font-extrabold text-[1.25em]">Indra.</Link>
             <div className='flex gap-x-7 font-semibold text-[1em]'>
                 {menu.map((item, i) => 
                     <Link key={i} href={item.url}
