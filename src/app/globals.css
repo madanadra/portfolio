@@ -6,8 +6,12 @@ body {
     font-size: 14px
 }
 
+.bg-gradient {
+    background: conic-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)
+}
+
 @media (min-width: 640px) {
     body {
-        font-size: 16px;
+        font-size: 16px
     }
 }
