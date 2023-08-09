@@ -7,7 +7,7 @@ body {
 }
 
 .bg-gradient {
-    background: conic-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)
+    background: linear-gradient(to right, #087ea4, #38bdf8)
 }
 
 @media (min-width: 640px) {

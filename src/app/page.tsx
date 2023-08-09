@@ -33,13 +33,9 @@ export default function Page() {
 
   return (<>
     <Navbar name='Project' />
-    <div className='sm:w-2/3 relative'>
-      <h1 className="font-bold text-[3em] leading-tight sm:leading-snug px-5 sm:px-20">
-        Hi! I&apos;m Indra, a Front-End Developer with React JS.
-      </h1>
-      <div className='absolute w-32 top-0 left-0 aspect-square bg-neutral-50 rounded-full blur-xl -z-10' />
-      <div className='absolute w-32 bottom-0 right-0 aspect-square bg-gradient rounded-full blur-3xl opacity-30 -z-10' />
-    </div>
+    <h1 className="font-bold text-[3em] leading-tight sm:leading-snug px-5 sm:px-20 sm:w-2/3 ">
+      Hi! I&apos;m Indra, a Front-End Developer with React JS.
+    </h1>
     <div className='py-7 sm:py-14 mt-14'>
       <h1 className='font-semibold text-[1.15em] px-5 sm:px-20 mb-10'>Featured projects</h1>
       {project.map((item, i) => 
