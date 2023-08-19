@@ -1,9 +1,22 @@
 'use client'
 
 import Link from "next/link"
-import { menu } from "../other/data"
 
 export default function Navbar({name}: {name: string}) {
+    const menu: {
+        url: string,
+        name: string,
+    }[] = [
+        {
+            url: '/',
+            name: 'Project'
+        },
+        {
+            url: '/about',
+            name: 'About'
+        }
+    ]
+    
     return (
         <div className="flex items-center justify-between gap-x-3 p-5 sm:py-10 sm:px-20 mb-14 text-[1em]">
             <Link href='/' className="relative">
