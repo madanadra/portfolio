@@ -1,34 +1,11 @@
 import type { Metadata } from 'next'
 import Card from './card'
 import Navbar from "./navbar";
+import { project } from './data';
 
 export const metadata: Metadata = {
   title: 'Muhammad Laksmana Indra',
 }
-
-export const project = [
-  {
-    image: './package.png',
-    imageMobile: './package-mobile.png',
-    name: 'Typing Ind',
-    description: 'Simple typing animation library for React.',
-    link: 'https://www.npmjs.com/package/typing-ind',
-  },
-  {
-    image: './api.png',
-    imageMobile: './api-mobile.png',
-    name: 'InGames',
-    description: 'Quiz game with Open Trivia DB API.',
-    link: 'https://ingames.vercel.app',
-  }, 
-  {
-    image: './auth.png',
-    imageMobile: './auth-mobile.png',
-    name: 'Indragram',
-    description: 'Instagram clone with Google OAuth.',
-    link: 'https://indragram.vercel.app',
-  }
-]
 
 export default function Page() {
   return (<>
