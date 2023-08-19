@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Card from './card'
 import Navbar from "./navbar";
-import { project } from './data';
+import { project } from '../other/data';
 
 export const metadata: Metadata = {
   title: 'Muhammad Laksmana Indra',

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { more } from "../data";
+import { more } from "../../other/data";
 
 export default function More() {
     return (

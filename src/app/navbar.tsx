@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { menu } from "./data"
+import { menu } from "../other/data"
 
 export default function Navbar({name}: {name: string}) {
     return (
