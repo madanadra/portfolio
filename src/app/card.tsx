@@ -1,19 +1,34 @@
 import Link from "next/link";
+import { abrilFatface, antonio, kenia } from "./font";
 
-export default function Card({item, index}: {item: {image: string, imageMobile: string, name: string, description: string, link: string}, index: number}) {
+export default function Card({item, num}: {item: {title: string, url: string, img: string, desc: string, tech: string[]}, num: number}) {
     return (
-        <div id={`project` + index} 
-        className={`${index%2 === 0 && 'bg-neutral-950 text-neutral-50'} 
-        py-7 sm:py-10 px-5 overflow-hidden flex flex-col-reverse sm:flex-row gap-y-5 gap-x-10`}>
-            <div className="sm:w-3/5 flex gap-x-3 ml-[-15%]">
-                <img src={item.image} alt={item.name} className="w-[calc((296%*100/377)-6px)]" />
-                <img src={item.imageMobile} alt={item.name} className="w-[calc((81%*100/377)-6px)]" />
+        <div className='grid md:grid-cols-2 gap-9 py-6'>
+            <div className={`${num % 2 === 0 && 'md:order-last'} grid gap-y-6 content-end`}>
+                <div className='flex items-center gap-x-3'>
+                    <h3 className={`${kenia.className} text-3xl sm:text-4xl lg:text-5xl`}>#{num}:</h3>
+                    <Link href={item.url} target="_blank" 
+                    className={`${antonio.className} sm:text-lg lg:text-xl uppercase 
+                    rounded-full py-1.5 px-3 border border-neutral-950 hover:text-violet-700 hover:border-violet-700`}>
+                        visit
+                    </Link>
+                </div>
+                <h1 className='font-medium sm:text-lg lg:text-xl uppercase leading-7 sm:leading-8 lg:leading-8'>
+                    <span className={`${antonio.className} font-normal text-5xl sm:text-6xl lg:text-7xl`}>
+                        {item.title}
+                    </span> - {item.desc}
+                </h1>
+                <div className='flex flex-wrap gap-1.5 text-sm sm:text-base lg:text-lg'>
+                    {item.tech.map((tech, i) => <>
+                        <Link href={`https://www.google.com/search?q=`+tech} target="_blank" key={i} className={`${abrilFatface.className} 
+                        font-medium italic hover:text-violet-700`}>
+                            {tech}
+                        </Link>
+                        <span className="last:hidden"> | </span>
+                    </>)}
+                </div>
             </div>
-            <div className="grid content-center gap-y-3">
-                <Link href={item.link} target="_blank" 
-                className="font-semibold text-[2em] leading-none underline w-max mb-0.5">{item.name}</Link>
-                <h1 className="text-[1.5em] font-light leading-relaxed">{item.description}</h1>
-            </div>
+            <img src={item.img} alt='Project Image' className='w-full aspect-square rounded-3xl' />
         </div>
     )
 }
