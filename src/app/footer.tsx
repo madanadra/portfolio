@@ -1,10 +1,18 @@
-import { abrilFatface } from "./font";
+import Link from "next/link"
+import { PiPeace } from "react-icons/pi";
 
-export default function Footer() {
+export default function Footer({menu}: {menu: {url?: string, text?: string, name: string}[]}) {
     return (
-        <div className="flex flex-wrap justify-between items-center gap-3 py-4">
-            <h1 className="text-sm sm:text-base lg:text-lg font-medium">mlaksindra@gmail.com</h1>
-            <h1 className={`${abrilFatface.className} font-bold sm:text-lg lg:text-xl uppercase`}>muhammad laksmana indra</h1>
+        <div className="text-sm sm:text-base lg:text-lg font-medium py-4">
+            {menu.map((item, i) => <>
+                <span className={`${!item.text && 'hidden'}`}>{item.text} </span>
+                {item.url 
+                ? <Link key={i} href={item.url} target="_blank" className="hover:text-violet-700 underline">{item.name}</Link>
+                : <span>{item.name}</span>
+                }
+                <span className="last-of-type:hidden">. </span>
+            </>)}
+            <span> <PiPeace className='inline' /></span>
         </div>
     )
 }
