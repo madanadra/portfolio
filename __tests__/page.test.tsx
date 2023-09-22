@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Page from '@/app/page'
+import Page from '@/app/(routes)/page'
 import '@testing-library/jest-dom'
  
 describe('Project page', () => {

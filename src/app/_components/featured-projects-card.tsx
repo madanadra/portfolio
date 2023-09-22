@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { playfairDisplay, antonio, spaceGrotest } from "./font";
+import { playfairDisplay, antonio, spaceGrotest } from "../font";
+import Image from "next/image";
 
-export default function Card({item, num}: {item: {title: string, url: string, img: string, desc: string, tech: string[]}, num: number}) {
+export default function FeaturedProjectsCard({item, num}: {item: {title: string, url: string, img: string, desc: string, tech: string[]}, num: number}) {
     return (
         <div className='grid md:grid-cols-2 gap-9 py-6'>
             <div className={`${num % 2 === 0 && 'md:order-last'} grid gap-y-6 content-end`}>
@@ -28,7 +29,9 @@ export default function Card({item, num}: {item: {title: string, url: string, im
                     </>)}
                 </div>
             </div>
-            <img src={item.img} alt='Project Image' className='w-full aspect-square rounded-3xl' />
+            <div className='relative w-full aspect-square rounded-3xl overflow-hidden'>
+                <Image src={item.img} alt='Background Image' priority fill placeholder="blur" className="object-cover object-center" />
+            </div>
         </div>
     )
 }
