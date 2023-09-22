@@ -2,7 +2,7 @@ import Link from "next/link";
 import { playfairDisplay, antonio, spaceGrotest } from "../font";
 import Image from "next/image";
 
-export default function FeaturedProjectsCard({item, num}: {item: {title: string, url: string, img: string, desc: string, tech: string[]}, num: number}) {
+export default function FeaturedProjectsCard({item, num}: {item: {title: string, url: string, img: any, desc: string, tech: string[]}, num: number}) {
     return (
         <div className='grid md:grid-cols-2 gap-9 py-6'>
             <div className={`${num % 2 === 0 && 'md:order-last'} grid gap-y-6 content-end`}>
