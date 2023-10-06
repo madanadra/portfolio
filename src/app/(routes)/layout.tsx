@@ -6,6 +6,9 @@ import Footer from '../_components/footer';
 import { inter } from '../font';
 
 export const metadata: Metadata = {
+  icons: {
+    icon: './icon.ico',
+  },
   description: 'Personal Portfolio Muhammad Laksmana Indra',
 }
 
