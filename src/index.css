@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-mtext: 'Roboto', 'serif';
+    --font-signa: 'Playfair Display', 'serif';
+    --font-ucase: 'Antonio', 'serif';
+}
+
+@layer utilities {
+    .page-animation {
+        animation: page-animation .3s ease-out;
+    }
+
+    @keyframes page-animation {
+        from {
+            opacity: .1;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
