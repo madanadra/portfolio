@@ -17,12 +17,11 @@ export default function Work() {
             project: ['Properti']
         },
         {
-            title: 'API',
-            img: 'api.png', 
-            desc: `Utilizing a variety of open-source APIs. 
-            Using Axios to make XMLHttpRequests from the browser.
-            Processing JSON data to make the website more informative.`, 
-            project: ['Music Playlist', 'Image Finder', 'Quotes App', 'Marvel Character List']
+            title: 'Tools',
+            img: 'tools.png', 
+            desc: `Websites that make activities easier, 
+            such as looking for links on a website and create a list of activities for a smooth day.`, 
+            project: ['Web Scraper', 'Productivity Booster']
         },
         {
             title: 'Clone',
@@ -33,19 +32,20 @@ export default function Work() {
             project: ['Indragram', 'Netflix Landing Page Clone']
         },
         {
+            title: 'API',
+            img: 'api.png', 
+            desc: `Utilizing a variety of open-source APIs. 
+            Using Axios to make XMLHttpRequests from the browser.
+            Processing JSON data to make the website more informative.`, 
+            project: ['Music Playlist', 'Image Finder', 'Quotes App', 'Marvel Character List']
+        },
+        {
             title: 'Games',
             img: 'games.png', 
             desc: `Games on the website with a set of logics to apply the rules of the game. 
             Can run on multiple platforms, commonly called PWA (Progressive Web App).`, 
             project: ['In Games', 'Find the Card', 'Drum Machine', 'Tic Tac Toe']
         },
-        {
-            title: 'Tools',
-            img: 'tools.png', 
-            desc: `Websites that make activities easier, 
-            such as looking for links on a website and create a list of activities for a smooth day.`, 
-            project: ['Web Scraper', 'Productivity Booster']
-        }
     ]
 
     return (
