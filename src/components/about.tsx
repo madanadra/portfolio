@@ -3,17 +3,17 @@ export default function About() {
         {
             title: 'Who am I?',
             content: `My full name is Muhammad Laksmana Indra, a Web Developer. I've been here for ${new Date().getFullYear()-2021} years, 
-            using the best and latest technologies to develop websites.`
+            using the best and modern technologies to develop websites.`
         },
         {
             title: 'What I have?',
-            content: `Besides React JS, I also use Next JS for framework, Tailwind CSS for styling, 
-            Laravel for backend, MySQL for database and other support tools.`
+            content: `I'm strong with Next JS, React JS, and Tailwind CSS. 
+            I'm also proficient in TypeScript, Prisma, PostgreSQL, Laravel, MySQL, and other supporting tools.`
         },
         {
             title: 'Why Frontend?',
-            content: `I skilled in frontend, backend and fullstack, but prefer to frontend because 
-            I love creativity in design and logic in the program.`
+            content: `I love creativity in design and logic in the code. 
+            But with the skills I have, I can be in the frontend, backend, and fullstack development.`
         }
     ]
 

@@ -8,7 +8,7 @@ import Work from "./components/work";
 export default function App() {
   return (
     <main className='font-mtext w-full min-h-screen bg-neutral-50 text-neutral-950 page-animation'>
-      <div className='max-w-6xl mx-auto px-6 divide-y divide-neutral-950'>
+      <div className='max-w-6xl mx-auto px-6'>
         <Header />
         <Hero />
         <Button id="about" href="https://www.linkedin.com/in/muhammad-laksmana-indra-3913b422b" text="connect to me" />

@@ -13,6 +13,10 @@
         animation: page-animation .3s ease-out;
     }
 
+    .shadow-main {
+        box-shadow: 0 0 90px -10px rgba(0, 0, 0, 0.1) inset;
+    }
+
     @keyframes page-animation {
         from {
             opacity: .1;
