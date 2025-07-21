@@ -22,7 +22,7 @@ export default function About() {
             {more.map((item, i) => 
                 <div key={i} className='grid gap-y-4'>
                     <h2 className='font-ucase uppercase md:text-xl'>{item.title}</h2>
-                    <h1 className='text-xl md:text-3xl'>{item.content}</h1>
+                    <h1 className='text-xl md:text-3xl border-l border-neutral-950 pl-4'>{item.content}</h1>
                 </div>
             )}
         </div>
